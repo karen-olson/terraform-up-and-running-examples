@@ -1,13 +1,13 @@
-/* resource "<PROVIDER>_<TYPE>" "<NAME"> {
-        [CONFIG ...]
-    }
-*/
-
 # step 1: configure the provider(s) you want to use
 provider "aws" {
     region = "us-east-2"
 }
 
+# step 2: define the resources you want to create with that provider
+/* resource "<PROVIDER>_<TYPE>" "<NAME"> {
+        [CONFIG ...]
+    }
+*/
 
 resource "aws_instance" "example" {
     # Amazon Machine Image that runs on the EC2 instance
